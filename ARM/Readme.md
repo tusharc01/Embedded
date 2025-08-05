@@ -168,7 +168,7 @@ The M-series chips are tightly integrated with the **macOS** operating system, a
 > **Note**: While Apple’s M-series processors offer significant advantages, they operate within Apple’s **closed ecosystem**. This can lead to limitations in terms of **hardware customization** and **software compatibility** compared to the more open x86 architecture used by Intel and AMD.
 
 
-# Unified Memory Architecture (UMA): Clarified
+## Unified Memory Architecture (UMA): Clarified
 
 Apple’s Unified Memory Architecture (UMA) is a **major reason** behind the **smoothness and efficiency** of Macs with Apple Silicon. However, it's crucial to understand that it **doesn’t mean RAM isn't separately used**; rather, it changes how RAM is structured and accessed.
 
@@ -198,7 +198,7 @@ This creates a **single, shared pool** of high-bandwidth, low-latency memory tha
   Unified memory is especially beneficial for **video editing**, **3D rendering**, **machine learning**, and **gaming**, where the CPU and GPU need frequent data sharing.
 
 
-# Apple’s Approach with Unified Memory and Cache
+## Apple’s Approach with Unified Memory and Cache
 
 While the general principle of moving data from slower storage to faster memory (SSD → RAM → Cache) holds true across systems, Apple’s implementation introduces significant optimizations:
 
@@ -219,7 +219,7 @@ Apple’s macOS and iOS use **Automatic Reference Counting (ARC)** for memory ma
 This is generally **more efficient** than Android’s **Garbage Collection (GC)**, helping maintain responsiveness and prevent lag.
 
 
-# Android’s Approach and Why It Can Sometimes Feel Less Smooth
+## Android’s Approach and Why It Can Sometimes Feel Less Smooth
 
 ### Diverse Hardware
 Android must support a wide range of devices, leading to **less optimization** between software and specific hardware, potentially affecting memory performance compared to Apple’s tightly controlled ecosystem.
