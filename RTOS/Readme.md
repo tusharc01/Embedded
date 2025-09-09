@@ -41,6 +41,7 @@ Here's a breakdown of the video's content:
 
 In essence, the video explains that while general-purpose operating systems aim for a smooth user experience, RTOSes are built to ensure critical tasks meet their deadlines, making them indispensable for systems where timing failures could have severe consequences. It also highlights that for simpler applications, a "super loop" or interrupts might be more appropriate than an RTOS.
 
+---
 
 This video, "Introduction to RTOS Part 3 - Task Scheduling," from Digi-Key Electronics, builds upon the previous discussion of FreeRTOS by explaining the **fundamental mechanisms of task scheduling, preemption, and task states** within a Real-Time Operating System, particularly in the context of the ESP32 and Arduino IDE.
 
