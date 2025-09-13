@@ -132,12 +132,53 @@ This results in the **wide range of ARM-based processors** available today, each
 
 ---
 
-# Apple's M-Series Processors: Advanced and Unique
+In modern smartphone SoCs, you’ll almost always find **both Cortex-A and Cortex-M class cores (or equivalents)** working together, but with different responsibilities:
+
+---
+
+### **Cortex-A series (Application cores)**
+
+* These are the **main CPU cores**.
+* High performance, with MMU, run Android/iOS/Linux.
+* Handle apps, multitasking, browser, games, etc.
+* Example in Snapdragon 8 Gen 2: ARM Cortex-X3 + Cortex-A715 + Cortex-A510.
+
+---
+
+### **Cortex-M (Microcontroller-class cores)**
+
+* These are **helper cores**, integrated inside the SoC for low-power tasks.
+* Run always-on background processes so big Cortex-A cores can sleep.
+* Examples of what they handle:
+
+  * Power management (talking to PMIC).
+  * Sensor fusion (accelerometer, gyroscope, step counter).
+  * “Always-on” voice detection (“Hey Google”, “Hey Siri”).
+  * Touch controller, audio control.
+
+In Qualcomm Snapdragon, this role is sometimes handled by **Cortex-M cores** or by **custom microcontroller/DSP cores** (like the **Hexagon DSP** or “Sensor Hub”).
+
+---
+
+### So the structure is:
+
+* **Cortex-A cores → brains of the phone (apps, OS).**
+* **Cortex-M or small MCUs inside → background workers (sensors, power, always-on tasks).**
+
+---
+
+👉 Interview phrasing:
+
+> “Yes, smartphones use Cortex-A series cores as the main processors. But modern SoCs also embed Cortex-M series or custom MCU cores for always-on and low-power tasks like sensor fusion and power management. This lets the system save battery while still responding instantly to user input.”
+
+---
+
+# Apple's M-Series Processors: Advanced and Unique 
 
 You're right to connect the advanced nature of Apple's M-series processors to the fact that Apple custom designs and manufactures them exclusively for their own products. This tight integration between hardware and software, often called **vertical integration**, gives Apple a distinct advantage in optimizing performance and power efficiency.
 
 
-## Key Factors Behind the M-Series' Advanced Capabilities
+## Key Factors Behind the M-Series' Advanced Capabilities (The “M” naming is coincidental, not related)
 
 ### Custom Core Design
 Apple, with its **architectural license from Arm**, designs highly customized CPU cores (like the **"Firestorm"** and **"Icestorm"** cores in the M1) that are tailored specifically for their hardware and software ecosystem. This allows them to optimize performance and efficiency in ways that aren't possible with off-the-shelf components (Quora).
