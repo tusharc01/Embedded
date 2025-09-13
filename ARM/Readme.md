@@ -141,8 +141,6 @@ In modern smartphone SoCs, you’ll almost always find **both Cortex-A and Corte
 * Handle apps, multitasking, browser, games, etc.
 * Example in Snapdragon 8 Gen 2: ARM Cortex-X3 + Cortex-A715 + Cortex-A510.
 
----
-
 ### **Cortex-M (Microcontroller-class cores)**
 
 * These are **helper cores**, integrated inside the SoC for low-power tasks.
@@ -156,14 +154,10 @@ In modern smartphone SoCs, you’ll almost always find **both Cortex-A and Corte
 
 In Qualcomm Snapdragon, this role is sometimes handled by **Cortex-M cores** or by **custom microcontroller/DSP cores** (like the **Hexagon DSP** or “Sensor Hub”).
 
----
-
 ### So the structure is:
 
 * **Cortex-A cores → brains of the phone (apps, OS).**
 * **Cortex-M or small MCUs inside → background workers (sensors, power, always-on tasks).**
-
----
 
 👉 Interview phrasing:
 
