@@ -134,8 +134,6 @@ This results in the **wide range of ARM-based processors** available today, each
 
 In modern smartphone SoCs, you’ll almost always find **both Cortex-A and Cortex-M class cores (or equivalents)** working together, but with different responsibilities:
 
----
-
 ### **Cortex-A series (Application cores)**
 
 * These are the **main CPU cores**.
